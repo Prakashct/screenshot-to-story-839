@@ -40,12 +40,12 @@ function Index() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-background font-sans text-navy" style={ml}>
-      <div className="mx-auto box-border w-full max-w-[1100px] px-4 md:px-6">
+      <div className="mx-auto w-full max-w-[800px] px-4">
         {/* 1 Hero */}
         <section className="pt-5 text-center">
           <h1 className="text-xl font-bold sm:text-2xl">Face വരയ്ക്കാൻ പഠിക്കാം ❤️</h1>
-          <img src={hero.url} alt="Portrait artworks by Vipin Bala" className="mx-auto mt-3 block h-auto w-full object-contain" />
-          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full items-center justify-center gap-3 text-lg tracking-wide md:w-[70%] md:max-w-[750px]">
+          <img src={hero.url} alt="Portrait artworks by Vipin Bala" className="mx-auto mt-3 block w-full max-w-[780px]" />
+          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full max-w-[780px] items-center justify-center gap-3 text-lg tracking-wide">
             JOIN NOW <ArrowRight className="h-5 w-5" />
           </LinkBtn>
         </section>
@@ -114,7 +114,7 @@ function Index() {
             <span className="text-4xl font-bold sm:text-5xl">589/-</span>
             <span className="text-lg">( 499 + GST )</span>
           </p>
-          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full items-center justify-center gap-2 text-xl md:max-w-[310px]">
+          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full max-w-[310px] items-center justify-center gap-2 text-xl">
             Get Special Offer <ArrowRight className="h-5 w-5" />
           </LinkBtn>
           <p className="mt-2 text-sm">Hurry! Grab the deal today!</p>
