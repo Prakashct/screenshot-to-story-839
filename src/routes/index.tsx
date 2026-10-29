@@ -40,18 +40,18 @@ function Index() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-background font-sans text-navy" style={ml}>
-      <div className="mx-auto max-w-[850px] px-4 sm:px-9">
+      <div className="mx-auto box-border w-full max-w-[1100px] px-4 md:px-6">
         {/* 1 Hero */}
         <section className="pt-5 text-center">
           <h1 className="text-xl font-bold sm:text-2xl">Face വരയ്ക്കാൻ പഠിക്കാം ❤️</h1>
-          <img src={hero.url} alt="Portrait artworks by Vipin Bala" className="mx-auto mt-3 w-full" />
-          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 max-w-[530px] items-center justify-center gap-3 text-lg tracking-wide">
+          <img src={hero.url} alt="Portrait artworks by Vipin Bala" className="mx-auto mt-3 block h-auto w-full object-contain" />
+          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full items-center justify-center gap-3 text-lg tracking-wide md:w-[70%] md:max-w-[750px]">
             JOIN NOW <ArrowRight className="h-5 w-5" />
           </LinkBtn>
         </section>
 
         {/* 2 Help */}
-        <section className="mt-6 flex flex-col gap-5 rounded-xl bg-mint p-5 sm:flex-row sm:p-6">
+        <section className="mt-6 flex flex-col gap-5 rounded-xl bg-mint p-5 md:flex-row md:p-6">
           <div className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-mint-strong">
             <Wallet className="h-8 w-8" />
           </div>
@@ -72,7 +72,7 @@ function Index() {
 
         {/* 3 Payment card */}
         <section className="relative mt-12 rounded-xl bg-card p-5 pt-10 shadow-sm sm:p-10">
-          <span className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-brand-deep px-10 py-2 font-semibold text-primary-foreground">
+          <span className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-brand-deep px-6 py-2 font-semibold text-primary-foreground sm:px-10">
             Gpay / Phonepay
           </span>
           <div className="grid gap-8 md:grid-cols-2">
@@ -114,7 +114,7 @@ function Index() {
             <span className="text-4xl font-bold sm:text-5xl">589/-</span>
             <span className="text-lg">( 499 + GST )</span>
           </p>
-          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 max-w-[310px] items-center justify-center gap-2 text-xl">
+          <LinkBtn href={siteConfig.checkoutUrl} className="btn-brand mx-auto mt-4 flex h-14 w-full items-center justify-center gap-2 text-xl md:max-w-[310px]">
             Get Special Offer <ArrowRight className="h-5 w-5" />
           </LinkBtn>
           <p className="mt-2 text-sm">Hurry! Grab the deal today!</p>
